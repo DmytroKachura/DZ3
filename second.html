@@ -5,7 +5,7 @@
     <title>Second page</title>
 </head>
 <body>
-    <form action="mailto:dkachura1999@gmail.com" method="post">
+    <form action="https://formspree.io/dkachura1999@gmail.com" method="post">
         <fieldset>
             <legend>Personal information:</legend>
     <label>First name:<br>
@@ -24,12 +24,29 @@
         </label>
         <label>
             Your age:<br>
-            <input type="text" name="age" required pattern="[0-9]{3}">
-            
-        </label>
+            <select name="age">
+  <option value="<18"><18</option>
+  <option value="18-25">18-25</option>
+  <option value="25-40">25-40</option>
+  <option value=">40">>40</option>
+</select><br>
+<label>
+    Select your favorite color:
+  <input type="color" name="favcolor">
+</label><br>
+<label>
+     Birthday:
+  <input type="date" name="birthday">
         </fieldset><br>
-    <input type="submit" value="Submit">    
-    
+        <fieldset>
+            <legend>Education</legend>
+            <input type="checkbox" name="education1" value="Mid education"> Middle education<br>
+            <input type="checkbox" name="education2" value="Mid sp education"> Middle special education<br>
+            <input type="checkbox" name="education3" value="High education"> Higher education 
+            
+        </fieldset>
+     
+     <input type="submit" value="Submit">
     </form>
     
     
